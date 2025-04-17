@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Youtube Listing</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="shortcut icon"
+      href="https://avatars.githubusercontent.com/u/56559378?s=400&u=02af9b922381b81588474cda9dca1c4571503dac&v=4"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <nav>
+      <img src="assets/logo.png" alt="netflix-font" border="0" />
+      <input
+        type="search"
+        alt="Searchbox"
+        placeholder="Search 🔍"
+        class="search"
+      />
+    </nav>
+    <main class="videoslist-wrapper">
+      <div class="loading-container">
+        <img id="loadingGif" src="assets/loading.gif" alt="Loading..." />
+        <p id="loadingText"></p>
+      </div>
+      <section class="video-grid"></section>
+    </main>
+    <script src="index.js"></script>
+  </body>
+</html>

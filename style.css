@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+body {
+  background-color: #831010;
+}
+
+input[type="search"]:focus {
+  outline: 2px solid black;
+  background-color: bisque;
+}
+
+nav {
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+}
+
+.loading-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.thumbnail {
+  object-fit: contain;
+  border-radius: 15px;
+  width: 100%;
+  cursor: pointer;
+}
+
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.videoCard {
+  background-color: #fff;
+  padding: 0.6rem;
+  margin-bottom: 1.5rem;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+  cursor: pointer;
+  background-color: #000000;
+}
+
+.videoTitle,
+.videoAuthor {
+  text-align: center;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.videoAuthor {
+  padding-top: 0.4rem;
+}
+
+.search {
+  padding: 0.8rem;
+  border-radius: 50px;
+  border: none;
+  text-decoration: none;
+  width: 50%;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 600px) {
+  input[type="search"] {
+    font-size: 18px;
+    padding: 12px;
+  }
+}
